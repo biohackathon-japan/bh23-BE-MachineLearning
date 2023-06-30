@@ -56,6 +56,8 @@ Therefore, in this study, we constructed the short-read human RNA-seq analysis p
 
 The RNA-seq data was acquired from the Sequence Read Archive (SRA). We obtained SRR8096262 as BE3 transfection data. For the BE4-rAPOBEC1 transfection data, we secured SRR11561273, SRR11561298, and SRR11561324. As for BE4-RrA3F transfection data, we gathered SRR11561293, SRR11561291, and SRR11561288. Additionally, for the negative control, we procured SRR11561326, SRR11561314, and SRR11561289 as nCas9 transfection data. A comprehensive list of all the sequencing files utilized in this study is presented in Table 1.
 
+### Table1
+
 | SRA ID | Tool | Replicate | Training/Test dataset | Ref |
 | -------- | -------- | -------- | -------- | -------- |
 | SRR8096262 | BE3 | - | - | [2] |
