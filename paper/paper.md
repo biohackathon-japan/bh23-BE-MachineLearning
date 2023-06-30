@@ -1,6 +1,6 @@
 ---
-title: 'BioHackJP 2023 Report R1: linked data standardization with LLMs'
-title_short: 'BioHackJP 2023 LD-LLM'
+title: 'Machine learning of transcriptome data treated with DNA base editor'
+title_short: 'ML of transcriptome with BE'
 tags:
   - Linked Data
   - Large Language Models
@@ -8,23 +8,23 @@ authors:
   - name: Kazuki Nakamae
     orcid: 0000-0002-4469-664X
     affiliation: 1
-  - name: Last Author
+  - name: Taro Kakuzaki
     orcid: 0000-0000-0000-0000
     affiliation: 2
-  - name: Last Author
+  - name: Kentaro Yamamoto
     orcid: 0000-0000-0000-0000
     affiliation: 3
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
+  - name: Takayuki Suzuki
+    orcid: 0000-0003-4481-9109
     affiliation: 4
 affiliations:
   - name: Genome Editing Innovation Center, Hiroshima University, 3-10-23 Kagamiyama, Higashi-Hiroshima, Hiroshima 739-0046, Japan 
     index: 1
-  - name: Second Affiliation
+  - name: Sator Inc., Japan
     index: 2
-  - name: Second Affiliation
+  - name: Genome Analytics Japan Inc., Japan
     index: 3
-  - name: Second Affiliation
+  - name: Graduate School of Integrated Sciences for Life, Hiroshima University, 3-10-23 Kagamiyama, Higashi-Hiroshima, Hiroshima 739-0046, Japan
     index: 4
 date: 30 June 2023
 cito-bibliography: paper.bib
