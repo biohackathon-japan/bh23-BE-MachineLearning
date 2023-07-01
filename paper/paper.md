@@ -32,7 +32,7 @@ group: R3
 git_url: https://github.com/biohackathon-japan/bh23-BE-MachineLearning
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: Nakamae \emph{et al.}
+authors_short: Kazuki Nakamae, Taro Kakuzaki, and Kentaro Yamamoto
 ---
 
 # Abstract
