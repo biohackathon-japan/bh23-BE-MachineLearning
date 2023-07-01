@@ -15,7 +15,7 @@ authors:
     orcid: 
     affiliation: 3
 affiliations:
-  - name: Genome Editing Innovation Center, Hiroshima University, 3-10-23 Kagamiyama, Higashi-Hiroshima, Hiroshima 739-0046, Japan 
+  - name: Genome Editing Innovation Center, Hiroshima University, Japan 
     index: 1
   - name: Sator Inc., Japan
     index: 2
