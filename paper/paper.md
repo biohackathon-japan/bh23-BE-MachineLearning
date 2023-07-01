@@ -9,7 +9,7 @@ authors:
     orcid: 0000-0002-4469-664X
     affiliation: 1
   - name: Taro Kakuzaki
-    orcid: 0000-0000-0000-0000
+    orcid: 
     affiliation: 2
   - name: Kentaro Yamamoto
     orcid: 
@@ -77,7 +77,7 @@ All the hg38 genome reference, index data, and dbSNP data used in this analysis 
 
 
 ## Preparation of Learning Dataset
-The learning data comprised of genomic sequence information ±20bp surrounding the points where C to T (U) substitutions occurred in the samples transfected with BE4-rAPOBEC1 (Positive) and nCas9 (Negative). The data, variant-called by PiCTURE, from biological replicates 1 and 2 were utilized respectively, with a total of 87,018 (replicate 1) and 88,160 (replicate 2) for Positive data, and 24,314 (replicate 1) and 21,870 (replicate 2) for Negative data. For BE4-rAPOBEC1 (Positive), the sites that overlapped with the nCas9 (Negative) data in terms of sequence were excluded from the Positive data. Consequently, the sequence information of XXX sites surrounding the sites where C to T (U) substitutions occurred in BE4-rAPOBEC1 and XXX sites in nCas9 were used as learning data. On the other hand, for the test data, we used 86,517 cases for BE4-rAPOBEC1 and 23,568 cases for nCas9.
+The learning data comprised of genomic sequence information ±20bp surrounding the points where C to T (U) substitutions occurred in the samples transfected with BE4-rAPOBEC1 (Positive) and nCas9 (Negative). The data, variant-called by PiCTURE, from biological replicates 1 and 2 were utilized respectively, with a total of 87,018 (replicate 1) and 88,160 (replicate 2) for Positive data, and 24,314 (replicate 1) and 21,870 (replicate 2) for Negative data. For BE4-rAPOBEC1 (Positive), the sites that overlapped with the nCas9 (Negative) data in terms of sequence were excluded from the Positive data. Consequently, the sequence information of 145,546 sites surrounding the sites where C to T (U) substitutions occurred in BE4-rAPOBEC1 and 34,405 sites in nCas9 were used as learning data. On the other hand, for the test data, we used 86,517 cases for BE4-rAPOBEC1 and 23,568 cases for nCas9.
 
 
 ## Training and Validation
@@ -105,7 +105,16 @@ Initially, we constructed a pipeline, termed the Pipeline for CRISPR-induced Tra
 
 ## Prediction of RNA off-targets using LLM
 
-Given these observations, it is challenging to entirely predict RNA off-targets through uniform motif analysis, and understanding and controlling their risk remains difficult. Therefore, we attempted to predict sequence patterns that BE4-rAPOBEC1 preferably reacts with, using machine learning to better capture C to U mutations triggered across the whole transcriptome. Recently, DNA-BERT, a type of Large Language Models (LLM) for machine learning on nucleic acid base sequences, has recorded excellent results in promoter identification, etc. We attempted to use this algorithm for general learning of C to U RNA off-target patterns.  As a result of the training, we successfully classified the test data (positive n=29087, negative n=6904, 5 Cross validation) with an accuracy of AUC=0.71. We named this model the BERT-assisted Base Editor-mediated RNA Targeting model (BERT BERT; BERTs) v1. We then applied this to off-target-suppressing BE4, BE4-RrA3F, with an introduced F130L mutation to rAPOBEC1, and successfully classified C to U RNA off-targets with an accuracy of AUC=0.62. These results suggest that BERTs v1 can make judgments based on an adequate generalization of RNA off-target patterns induced by cytosine deaminase enzymes.
+Given these observations, it is challenging to entirely predict RNA off-targets through uniform motif analysis, and understanding and controlling their risk remains difficult. Therefore, we attempted to predict sequence patterns that BE4-rAPOBEC1 preferably reacts with, using machine learning to better capture C to U mutations triggered across the whole transcriptome. Recently, DNA-BERT, a type of Large Language Models (LLM) for machine learning on nucleic acid base sequences, has recorded excellent results in promoter identification, etc. We attempted to use this algorithm for general learning of C to U RNA off-target patterns. As a result of the training, We determined the hyperparameter as kmer=4 (Table 2). We successfully classified the test data (positive n=29087, negative n=6904, 5 Cross validation) with an accuracy of AUC=0.71. We named this model the BERT-assisted Base Editor-mediated RNA Targeting model (BERT BERT; BERTs) v1. We then applied this to off-target-suppressing BE4, BE4-RrA3F, with an introduced F130L mutation to rAPOBEC1, and successfully classified C to U RNA off-targets with an accuracy of AUC=0.62. These results suggest that BERTs v1 can make judgments based on an adequate generalization of RNA off-target patterns induced by cytosine deaminase enzymes.
+
+### Table2
+
+| kmer | accuracy | precision | recall | f1 |
+| -------- | -------- | -------- | -------- | -------- |
+| 3 | 0.834 | 0.859 | 0.952 | 0.903 |
+| 4 | 0.834 | 0.859 | 0.952 | 0.904 |
+| 5 | 0.832 | 0.856 | 0.953 | 0.902 |
+| 6 | 0.830 | 0.853 | 0.954 | 0.901 |
 
 ![Overview of pipeline for detection of RNA off-targets using PiCTURE](./Figure1.png)
 ![Overview of pipeline for detection of RNA off-targets using PiCTURE](./Figure2.png)
