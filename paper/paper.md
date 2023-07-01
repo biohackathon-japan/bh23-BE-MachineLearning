@@ -12,11 +12,8 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: 2
   - name: Kentaro Yamamoto
-    orcid: 0000-0000-0000-0000
+    orcid: 
     affiliation: 3
-  - name: Takayuki Suzuki
-    orcid: 0000-0003-4481-9109
-    affiliation: 4
 affiliations:
   - name: Genome Editing Innovation Center, Hiroshima University, 3-10-23 Kagamiyama, Higashi-Hiroshima, Hiroshima 739-0046, Japan 
     index: 1
@@ -24,8 +21,6 @@ affiliations:
     index: 2
   - name: Genome Analytics Japan Inc., Japan
     index: 3
-  - name: Graduate School of Integrated Sciences for Life, Hiroshima University, 3-10-23 Kagamiyama, Higashi-Hiroshima, Hiroshima 739-0046, Japan
-    index: 4
 date: 30 June 2023
 cito-bibliography: paper.bib
 event: BH23JP
