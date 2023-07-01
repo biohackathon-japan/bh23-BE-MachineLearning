@@ -137,7 +137,7 @@ Furthermore, we plan to apply BERTs v1 to transcriptome annotations according to
 
 ## Acknowledgements
 
-PiCTURE was constructed with the support of Hidemasa Bono from Hiroshima University and Yuki Naito and Hiromasa Ono from DBCLS. We would like to express our gratitude to the organizing committee of BioHackathon 2023 for organizing our group and facilitating our research environment.
+PiCTURE was constructed with the support of Dr. Hidemasa Bono from Hiroshima University and Dr. Yuki Naito and Dr. Hiromasa Ono from DBCLS. We would like to express our gratitude to the organizing committee of BioHackathon 2023 for organizing our group and facilitating our research environment.
 
 ## References
 
