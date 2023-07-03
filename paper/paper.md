@@ -143,7 +143,7 @@ PiCTURE was constructed with the support of Dr. Hidemasa Bono from Hiroshima Uni
 
 This work was supported by JSPS KAKENHI (grant number 21K17855 to Kazuki Nakamae).
 
-## Confrict of interest
+## Conflict of interest
 
 Kazuki Nakamae was employed by PtBio Inc.
 
