@@ -139,6 +139,14 @@ Furthermore, we plan to apply BERTs v1 to transcriptome annotations according to
 
 PiCTURE was constructed with the support of Dr. Hidemasa Bono from Hiroshima University and Dr. Yuki Naito and Dr. Hiromasa Ono from DBCLS. We would like to express our gratitude to the organizing committee of BioHackathon 2023 for organizing our group and facilitating our research environment.
 
+## Funding
+
+This work was supported by JSPS KAKENHI (grant number 21K17855 to Kazuki Nakamae).
+
+## Confrict of interest
+
+Kazuki Nakamae was employed by PtBio Inc. H.B.
+
 ## References
 
 1. Komor, Alexis C., et al. "Programmable editing of a target base in genomic DNA without double-stranded DNA cleavage." Nature 533.7603 (2016): 420-424.
