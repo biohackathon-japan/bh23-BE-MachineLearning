@@ -145,7 +145,7 @@ This work was supported by JSPS KAKENHI (grant number 21K17855 to Kazuki Nakamae
 
 ## Confrict of interest
 
-Kazuki Nakamae was employed by PtBio Inc. H.B.
+Kazuki Nakamae was employed by PtBio Inc.
 
 ## References
 
