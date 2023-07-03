@@ -17,7 +17,7 @@ authors:
 affiliations:
   - name: Genome Editing Innovation Center, Hiroshima University, Japan 
     index: 1
-  - name: Sator Inc., Japan
+  - name: Independent researcher
     index: 2
   - name: Genome Analytics Japan Inc., Japan
     index: 3
